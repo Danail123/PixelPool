@@ -1,15 +1,15 @@
 import { applyMiddleware, combineReducers, createStore, Store } from 'redux';
 import thunk from 'redux-thunk';
-import { BasicReducer, IBasicState } from '../reducers/BasicReducer';
+import { UserReducer, IUserState } from '../reducers/UserReducer';
 
 // Create an interface for the application state
 export interface IAppState {
-    basicState: IBasicState
+    basicState: IUserState
 }
 
 // Create the root reducer
 const rootReducer = combineReducers<IAppState>({
-    basicState: BasicReducer
+    basicState: UserReducer
 });
 
 // Create a configure store function of type `IAppState`

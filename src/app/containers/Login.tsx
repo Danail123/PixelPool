@@ -4,6 +4,7 @@ import { createStyles, makeStyles } from '@mui/styles';
 import React, { useContext, useState } from 'react';
 import { AuthContext } from '../../context/AuthContext';
 import { auth } from '../../firebaseSetup';
+import { UserActionTypes } from '../actions/UserActions';
 
 const useStyles = makeStyles((theme: Theme) =>
     createStyles({
@@ -134,6 +135,7 @@ const Login = () => {
                                             variant="contained"
                                             onClick={createAccount}
                                             sx={{ mt: 3, mb: 2 }}
+                                            
                                         >
                                             Sign Up
                                         </Button>

@@ -1,29 +1,29 @@
 import { Reducer } from 'redux';
-import { BasicActions, BasicActionTypes } from '../actions/BasicActions';
+// import { BasicActions, BasicActionTypes } from '../actions/BasicActions';
 
-export interface IBasicState {
-  property: any;
-}
+// export interface IBasicState {
+//   property: any;
+// }
 
-const initialBasicState: IBasicState = {
-  property: null
-};
+// const initialBasicState: IBasicState = {
+//   property: null
+// };
 
-export const BasicReducer: Reducer<IBasicState, BasicActions> = (
-  state = initialBasicState,
-  action
-) => {
+// export const BasicReducer: Reducer<IBasicState, BasicActions> = (
+//   state = initialBasicState,
+//   action
+// ) => {
 
-  switch (action.type) {
+//   switch (action.type) {
 
-    case BasicActionTypes.BASIC: {
-      return {
-        ...state,
-        property: action.property
-      };
-    }
+//     case BasicActionTypes.BASIC: {
+//       return {
+//         ...state,
+//         property: action.property
+//       };
+//     }
 
-    default:
-      return state;
-  }
-};
+//     default:
+//       return state;
+//   }
+// };
